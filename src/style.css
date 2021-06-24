@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.button{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.button a{
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 1rem 1.5rem;
+    background: rgb(226, 232, 240);
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    letter-spacing: 2px;
+    display: inline-block;
+    transition: all .2s linear;
+    transition-delay: 1s;
+}
+
+.button a:hover{
+    background: rgb(60, 67, 163);
+    color: white;
+}
+
+.button a span{
+    position: absolute;
+    display: block;
+    background: rgb(60, 67, 163);
+}
+
+.button a span:nth-child(1){
+    width: 2%;
+    height: 100%;
+    left: 0%;
+    bottom: 0%;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform .2s linear;
+    transition-delay: 0s;
+}
+
+.button a:hover span:nth-child(1){
+    transform: scaleY(1);
+    transform-origin: bottom;
+}
+
+.button a span:nth-child(2){
+    width: 100%;
+    height: 5%;
+    left: 0%;
+    bottom: 100%;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .2s linear;
+    transition-delay: 0.25s;
+}
+
+.button a:hover span:nth-child(2){
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+
+
+.button a span:nth-child(3){
+    width: 2%;
+    height: 100%;
+    right: 0%;
+    bottom: 0%;
+    transform: scaleY(0);
+    transform-origin: bottom;
+    transition: transform .2s linear;
+    transition-delay: .5s;
+}
+
+.button a:hover span:nth-child(3){
+    transform: scaleY(1);
+    transform-origin: top;
+}
+
+
+.button a span:nth-child(4){
+    width: 100%;
+    height: 5%;
+    right: 0%;
+    bottom: 0%;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform .2s linear;
+}
+
+.button a:hover span:nth-child(4){
+    transform: scaleX(1);
+    transform-origin: right;
+    transition-delay: .75s;
+}
+
+
